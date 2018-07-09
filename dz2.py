@@ -1,7 +1,12 @@
 import random
 import sys
 
-n = int(sys.argv[1])
+try:
+    n = int(sys.argv[1])
+except IndexError:
+    print("Error! Enter N")
+    n = int(input())
+    
 sum = 0;
 for i in range(n):
     r = random.uniform(-1, 1);
