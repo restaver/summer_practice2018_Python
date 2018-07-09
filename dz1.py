@@ -1,4 +1,4 @@
 import random
 
 r = random.uniform(-1, 1);
-print r;
+print ("%.4f" % r);
