@@ -7,5 +7,10 @@ def  compute(n):
         i += 1
     return s/n
     
-n = sys.argv [1]
+try:
+    n = int(sys.argv[1])
+except IndexError:
+    print("Error! Enter N")
+    n = int(input())
+    
 print  "average  of %d random  numbers  is %g" % (n, compute(n))
