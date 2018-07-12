@@ -7,8 +7,8 @@ except:
     print "Usage:", sys.argv[0], "infile  outfile"
     sys.exit (1)
 
-ifile = open(infilename , ’r’)
-ofile = open(outfilename , ’w’)
+ifile = open(infilename , 'r')
+ofile = open(outfilename , 'w')
 
 def  myfunc(y):
     if y  >= 0.0:
@@ -21,7 +21,7 @@ for  line in ifile:
     x = float(pair [0])
     y = float(pair [1])
     fy = myfunc(y)
-    ofile.write(’%g %12.5e\n’ % (x,fy))
+    ofile.write('%g %12.5e\n' % (x,fy))
 
 ifile.close()
 ofile.close()
