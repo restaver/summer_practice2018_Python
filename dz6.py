@@ -16,6 +16,7 @@ for line in ifile:
     for x in l:
         s+=float(x)
         i+=1
-    ofile.write(line +  ' average: %12.6f\n' % (s/i))
+        ofile.write(x + ' ')
+    ofile.write('average: %12.6f\n' % (s/i))
 ifile.close()
 ofile.close()
